@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Overpass";
+  src: url("https://fonts.google.com/specimen/Overpass");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 80%;
+    height: auto;
+    margin: 50% 15px;
+    background-color: hsl(213deg, 19%, 18%);
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .container .container__form--estrela {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(210deg, 17%, 20%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .container h1,
+.container p {
+    margin: 10px 20px;
+  }
+  .container p {
+    font-size: 15px;
+    color: hsl(217deg, 12%, 63%);
+  }
+  .container .container__form--select {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+  }
+  .container .container__form--select .container__form--select--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(210deg, 17%, 20%);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .container .container__form--select .container__form--select--button a {
+    text-decoration: none;
+    color: hsl(217deg, 12%, 63%);
+  }
+  .container .container__form--select .container__form--select--button:hover {
+    background-color: hsl(217deg, 12%, 63%);
+  }
+  .container .container__form--button {
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    background-color: hsl(25deg, 97%, 53%);
+    color: hsl(0deg, 0%, 100%);
+    border-radius: 50px;
+    border: none;
+  }
+}
+.container__button:hover {
+  background-color: hsl(216deg, 12%, 54%);
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 25px;
+}
+.container .container__submit {
+  display: none;
+}
+.container .container__form--estrela {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(210deg, 17%, 20%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.container h1,
+.container p {
+  margin: 10px 40px;
+}
+.container p {
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+}
+.container .container__form--select {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.container .container__form--select .container__form--select--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(210deg, 17%, 20%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container .container__form--select .container__form--select--button a {
+  text-decoration: none;
+  color: hsl(217deg, 12%, 63%);
+  padding: 40px;
+}
+.container .container__form--select .container__form--select--button:hover {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.container .container__form--select .container__form--select--button:hover a {
+  color: hsl(213deg, 19%, 18%);
+}
+.container .container__form--button {
+  width: 80%;
+  height: 40px;
+  margin: 20px 40px;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.container .container__form--button:hover {
+  background-color: hsl(216deg, 12%, 54%);
+}
+.container .container__form--select--button.ativo {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.container .container__form--select--button.ativo a {
+  color: hsl(213deg, 19%, 18%);
+}
+
+.container.enviado {
+  display: block;
+  width: 400px;
+  height: auto;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 25px;
+}
+.container.enviado .container__form {
+  display: none;
+}
+.container.enviado .container__submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container.enviado .container__submit .container__submit--img {
+  margin: 40px 0 20px 0;
+}
+.container.enviado .container__submit .container__submit--select {
+  width: auto;
+  height: auto;
+  background-color: hsl(210deg, 17%, 20%);
+  border-radius: 50px;
+  color: hsl(25deg, 97%, 53%);
+  text-align: center;
+  padding: 8px 10px;
+}
+.container.enviado .container__submit .container__submit--texto {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-top: 25px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
