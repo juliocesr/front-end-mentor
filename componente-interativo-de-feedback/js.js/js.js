@@ -25,7 +25,7 @@ function feedBack (index) {
             let valor = select[index].textContent;
             let feedBackText = document.querySelector('.container__submit--select');
 
-            feedBackText.textContent = `Submit You selected ${valor} out of 5`
+            feedBackText.textContent = `Submit You selected ${valor} out of 5`;
 
             chosen(index);
             console.log(valor)
