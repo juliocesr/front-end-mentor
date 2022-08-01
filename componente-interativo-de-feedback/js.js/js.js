@@ -8,19 +8,16 @@ function addClass() {
 }
 
 
-
-
 function feedBack (index) {
     const select = document.querySelectorAll('.container__form--select--button a');
     
-
     let chosen = (index) => {
         const selectbg = document.querySelectorAll('.container__form--select--button');
 
         selectbg.forEach((element) => {
             element.classList.remove('ativo');
         })
-        selectbg[index].classList.add('ativo')
+        selectbg[index].classList.add('ativo');
     }
 
     select.forEach((item, index) => {
